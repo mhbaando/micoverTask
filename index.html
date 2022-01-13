@@ -3,13 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        rel="stylesheet"
+        href="./main.css"
+    />
     <title>Document</title>
 </head>
 
 <body>
-
+    <div class="overlay"></div>
     <main>
         <section class="bg">
             <div class="heading">
@@ -19,56 +29,172 @@
             <div class="form-container">
                 <form>
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter Your Name"
+                        class="name"
+                    >
                     <label for="name">Emaiil</label>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter Your Email"
+                        class="email"
+                    >
                     <label for="name">Age<small>(optional)</small></label>
-                    <input type="text" name="age" id="age" placeholder="Age">
-                  
+                    <input
+                        type="text"
+                        name="age"
+                        id="age"
+                        placeholder="Age"
+                        class="age"
+                    >
+
                     <label for="job">Which option best describes your current role?</label>
 
                     <select id="job">
-                      <option value="student">Student</option>
-                      <option value="fulltime-job">fulltime Job</option>
-                      <option value="fulltime-learner">Fulltime Learner</option>
-                      <option value="prefer-noy-tosay">Perfer not to say</option>
-                      <option value="other">Other</option>
+                        <option value="student">Student</option>
+                        <option value="fulltime-job">fulltime Job</option>
+                        <option value="fulltime-learner">Fulltime Learner</option>
+                        <option value="prefer-noy-tosay">Perfer not to say</option>
+                        <option value="other">Other</option>
                     </select>
-                    
-                    <label for="recommendation" >Would you recommend freeCodeCamp to a friend?</label>
-                    <input type="radio" value="Definately" name="input">
-                    <input type="radio" value="Maybe" name="input">
-                    <input type="radio" value="Not sure" name="input">
-                    
 
-                        
+                    <div class="recommendation">
+                        <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label><br>
+                        <input
+                            type="radio"
+                            value="Definately"
+                            name="input"
+                        >
+                        <label for="Definately">Definately</label><br>
+                        <input
+                            type="radio"
+                            value="Maybe"
+                            name="input"
+                        >
+                        <label for="Definately">Maybe</label><br>
+                        <input
+                            type="radio"
+                            value="Not sure"
+                            name="input"
+                        >
+                        <label for="Definately">Not sure</label>
+                    </div>
+
                     <label for="features">What is your favorite feature of freeCodeCamp?</label>
-
                     <select id="features">
-                      <option value="Challanges">Challanges</option>
-                      <option value="projects">Projects</option>
-                      <option value="community">Community</option>
-                      <option value="open-source">Open source</option>
+                        <option value="Challanges">Challanges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open-source">Open source</option>
                     </select>
 
-                    <label for='Better-feature'>What would you like to see improved?<small>(Check all that apply)</small></label>
-                    <input type="checkbox" name="Feature1" value="Front-end Projects">
-                    <input type="checkbox" name="feature2" value="Backend-end Projects">
-                    <input type="checkbox" name="feature3" value="Data visualization">
-                    <input type="checkbox" name="feature4" value="Challanges">
-                    <input type="checkbox" name="feature5" value="OPen source commuinity">
-                    <input type="checkbox" name="feature6" value="Gitter Help rooms">
-                    <input type="checkbox" name="feature7" value="Videos">
-                    <input type="checkbox" name="feature8" value="City Meetups">
-                    <input type="checkbox" name="feature9" value="Wiki">
-                    <input type="checkbox" name="feature10" value="Forum">
-                    <input type="checkbox" name="feature11" value="BAdditional Courses">
+                    <div class="features">
+                        <label for='Better-feature'>What would you like to see improved?<small>(Check all that
+                                apply)</small></label>
 
-                    <label for="comment">Any comments or suggestions?</label>
-                    <input type="text" placeholder="Enter your comment here">
+                        <label for="Feature1">
+                            <input
+                                type="checkbox"
+                                name="Feature1"
+                                value="Front-end Projects"
+                            >
+                            Front-end Projects</label>
+                        <label for="Feature2">
+                            <input
+                                type="checkbox"
+                                name="Feature2"
+                                value="Back-end Projects"
+                            >
+                            Back-end Projects</label>
+                        <label for="Feature3">
+                            <input
+                                type="checkbox"
+                                name="Feature3"
+                                value="Data Visualization"
+                            >
+                            Data Visualization</label>
+                        <label for="Feature4">
+                            <input
+                                type="checkbox"
+                                name="Feature4"
+                                value="Challenges"
+                            >
+                            Challenges</label>
+                        <label for="Feature5">
+                            <input
+                                type="checkbox"
+                                name="Feature5"
+                                value="Open Source Community"
+                            >
+                            Open Source Community</label>
+                        <label for="Feature6">
+                            <input
+                                type="checkbox"
+                                name="Feature6"
+                                value="Gitter help rooms"
+                            >
+                            Gitter help rooms</label>
+                        <label for="Feature7">
+                            <input
+                                type="checkbox"
+                                name="Feature7"
+                                value="Videos"
+                            >
+                            Videos</label>
+                        <label for="Feature8">
+                            <input
+                                type="checkbox"
+                                name="Feature8"
+                                value="City Meetups"
+                            >
+                            City Meetups</label>
+                        <label for="Feature9">
+                            <input
+                                type="checkbox"
+                                name="Feature9"
+                                value="Wiki"
+                            >
+                            Wiki</label>
+                        <label for="Feature10">
+                            <input
+                                type="checkbox"
+                                name="Feature10"
+                                value="Forum"
+                            >
+                            Forum</label>
+                        <label for="Feature11">
+                            <input
+                                type="checkbox"
+                                name="Feature11"
+                                value="Additional Courses"
+                            >
+                            Additional Courses</label>
+                    </div>
 
 
-                    <button type="submit" class="btn">Submit</button>
+
+                    <div class="commnets">
+                        <label for="comment">Any comments or suggestions?</label>
+                        <textarea
+                            id="comment"
+                            name="comment"
+                            rows="4"
+                            cols="100"
+                            placeholder="Enter Your Comment Here"
+                        >
+                            </textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >Submit</button>
                 </form>
             </div>
         </section>
