@@ -20,11 +20,61 @@
                 <form>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                    <label for="name">Emaiil</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <label for="name">Age<small>(optional)</small></label>
+                    <input type="text" name="age" id="age" placeholder="Age">
+                  
+                    <label for="job">Which option best describes your current role?</label>
+
+                    <select id="job">
+                      <option value="student">Student</option>
+                      <option value="fulltime-job">fulltime Job</option>
+                      <option value="fulltime-learner">Fulltime Learner</option>
+                      <option value="prefer-noy-tosay">Perfer not to say</option>
+                      <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="recommendation" >Would you recommend freeCodeCamp to a friend?</label>
+                    <input type="radio" value="Definately" name="input">
+                    <input type="radio" value="Maybe" name="input">
+                    <input type="radio" value="Not sure" name="input">
+                    
+
+                        
+                    <label for="features">What is your favorite feature of freeCodeCamp?</label>
+
+                    <select id="features">
+                      <option value="Challanges">Challanges</option>
+                      <option value="projects">Projects</option>
+                      <option value="community">Community</option>
+                      <option value="open-source">Open source</option>
+                    </select>
+
+                    <label for='Better-feature'>What would you like to see improved?<small>(Check all that apply)</small></label>
+                    <input type="checkbox" name="Feature1" value="Front-end Projects">
+                    <input type="checkbox" name="feature2" value="Backend-end Projects">
+                    <input type="checkbox" name="feature3" value="Data visualization">
+                    <input type="checkbox" name="feature4" value="Challanges">
+                    <input type="checkbox" name="feature5" value="OPen source commuinity">
+                    <input type="checkbox" name="feature6" value="Gitter Help rooms">
+                    <input type="checkbox" name="feature7" value="Videos">
+                    <input type="checkbox" name="feature8" value="City Meetups">
+                    <input type="checkbox" name="feature9" value="Wiki">
+                    <input type="checkbox" name="feature10" value="Forum">
+                    <input type="checkbox" name="feature11" value="BAdditional Courses">
+
+                    <label for="comment">Any comments or suggestions?</label>
+                    <input type="text" placeholder="Enter your comment here">
+
+
+                    <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
         </section>
     </main>
     <script src="./main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
